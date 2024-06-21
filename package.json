@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf static/track* && esbuild --bundle --minify --global-name=_goTracker --format=life --outfile=static/track.js src/track.ts"
+    "start": "http-server",
+    "build": "rm -rf static/track* && esbuild --bundle --minify --global-name=_goTracker --format=iife --outfile=static/track.js src/track.ts"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,8 @@
   "dependencies": {
     "esbuild": "^0.21.5",
     "typescript": "^5.5.2"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }

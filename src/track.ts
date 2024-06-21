@@ -1,3 +1,1 @@
-(() => {
-    console.log("build OK");
-})
+var _goTracker=(()=>{console.log("build OK");})();
