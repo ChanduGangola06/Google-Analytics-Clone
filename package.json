@@ -1,0 +1,16 @@
+{
+  "name": "google-analytics-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf static/track* && esbuild --bundle --minify --global-name=_goTracker --format=life --outfile=static/track.js src/track.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.21.5",
+    "typescript": "^5.5.2"
+  }
+}
